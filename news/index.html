@@ -40,9 +40,18 @@
   .btn.script:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,.35);}
 
   .note{margin-top:30px;color:#7f9cc9;font-size:clamp(12px,1.5vw,15px);line-height:1.6;}
+
+  .home-link{position:fixed;top:16px;left:16px;z-index:10;display:inline-flex;align-items:center;gap:8px;
+    padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.94);color:#123a86;
+    font-size:clamp(13px,1.6vw,17px);font-weight:800;text-decoration:none;
+    box-shadow:0 6px 20px rgba(0,0,0,.28);transition:transform .14s,background .14s;}
+  .home-link:hover{transform:translateY(-2px);background:#fff;}
+  .home-link:active{transform:scale(.97);}
+
 </style>
 </head>
 <body>
+  <a class="home-link" href="../" aria-label="태풍 안전 놀이 메인으로 이동">🏠 다른 활동</a>
   <div class="wall">
     <span>안전 뉴스 · 안전 뉴스 · 안전 뉴스 · 안전 뉴스 · 안전 뉴스</span>
     <span>안전 뉴스 · 안전 뉴스 · 안전 뉴스 · 안전 뉴스 · 안전 뉴스</span>
