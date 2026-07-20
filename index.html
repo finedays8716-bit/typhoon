@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>태풍 안전 놀이</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{width:100%;min-height:100%;}
+body{font-family:"Malgun Gothic","맑은 고딕",sans-serif;background:linear-gradient(160deg,#0d1b4b,#173f7a 55%,#0a5677);color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px;overflow-x:hidden;}
+.bg{position:fixed;inset:0;pointer-events:none;overflow:hidden;opacity:.22;}
+.bg span{position:absolute;font-size:clamp(34px,6vw,74px);animation:float 8s ease-in-out infinite;}
+.bg span:nth-child(1){left:6%;top:10%;}.bg span:nth-child(2){right:8%;top:17%;animation-delay:-2s}.bg span:nth-child(3){left:13%;bottom:8%;animation-delay:-4s}.bg span:nth-child(4){right:14%;bottom:10%;animation-delay:-6s}
+@keyframes float{50%{transform:translateY(-18px) rotate(8deg)}}
+.wrap{position:relative;z-index:2;width:min(1040px,100%);text-align:center;}
+.badge{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:7px 16px;border-radius:999px;font-weight:700;margin-bottom:14px;}
+h1{font-size:clamp(34px,6vw,68px);line-height:1.1;text-shadow:0 5px 22px rgba(0,0,0,.35);}
+.sub{margin-top:13px;color:#d6e8ff;font-size:clamp(16px,2.1vw,23px);line-height:1.5;}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:38px;}
+.card{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:320px;padding:30px 24px;border-radius:28px;text-decoration:none;color:#fff;border:2px solid rgba(255,255,255,.2);box-shadow:0 16px 42px rgba(0,0,0,.28);transition:transform .18s,box-shadow .18s;}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 50px rgba(0,0,0,.38)}.card:active{transform:scale(.98)}
+.coming{background:linear-gradient(145deg,#425fc5,#284bb3)}
+.news{background:linear-gradient(145deg,#ef5b62,#d93642)}
+.icon{font-size:clamp(58px,8vw,92px);margin-bottom:16px;}
+.title{font-size:clamp(24px,3.4vw,38px);font-weight:900;margin-bottom:10px;}
+.desc{font-size:clamp(14px,1.7vw,19px);line-height:1.55;color:rgba(255,255,255,.9)}
+.go{margin-top:22px;background:#fff;color:#173d79;font-weight:900;font-size:clamp(15px,1.8vw,20px);padding:11px 24px;border-radius:999px;}
+.news .go{color:#c82936}
+@media(max-width:720px){body{align-items:flex-start;padding:22px 16px}.cards{grid-template-columns:1fr;gap:18px;margin-top:28px}.card{min-height:230px;padding:24px 18px}}
+</style>
+</head>
+<body>
+<div class="bg"><span>🌀</span><span>☔</span><span>💨</span><span>🎤</span></div>
+<main class="wrap">
+  <div class="badge">AI 기반 태풍 안전교육</div>
+  <h1>태풍 안전 놀이</h1>
+  <p class="sub">활동할 웹앱을 선택해 주세요.</p>
+  <section class="cards">
+    <a class="card coming" href="./coming/">
+      <div class="icon">🌀</div>
+      <div class="title">태풍이 왔어요!</div>
+      <div class="desc">태풍 전·중·후 상황을 살펴보고<br>안전한 행동을 선택해 보아요.</div>
+      <div class="go">시작하기 ▶</div>
+    </a>
+    <a class="card news" href="./news/">
+      <div class="icon">🎤</div>
+      <div class="title">태풍 뉴스 스튜디오</div>
+      <div class="desc">뉴스 앵커가 되어<br>태풍 안전수칙을 안내해 보아요.</div>
+      <div class="go">방송 시작하기 ▶</div>
+    </a>
+  </section>
+</main>
+</body>
+</html>
