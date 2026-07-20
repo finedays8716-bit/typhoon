@@ -234,9 +234,25 @@ body{font-family:'Jua',sans-serif;background:#1a1a3e;}
 #videoWrap{overflow-y:auto;}
 #videoWrap .phenom-grid{flex:none;height:min(26vh,200px);grid-template-columns:repeat(4,1fr);grid-template-rows:1fr;}
 
+
+.btn-main-home{
+  position:fixed;top:16px;left:16px;z-index:500;
+  display:inline-flex;align-items:center;gap:8px;
+  padding:10px 16px;border-radius:999px;
+  background:rgba(255,255,255,.94);color:#173d79;
+  font-family:'Jua',sans-serif;font-size:clamp(14px,1.7vw,20px);
+  font-weight:700;text-decoration:none;
+  box-shadow:0 5px 18px rgba(0,0,0,.24);
+  border:2px solid rgba(255,255,255,.7);
+}
+.btn-main-home:hover{transform:translateY(-2px);background:#fff;}
+.btn-main-home:active{transform:scale(.97);}
+@media(max-width:560px){.btn-main-home{top:10px;left:10px;padding:8px 12px;font-size:13px;}}
+
 </style>
 </head>
 <body>
+<a class="btn-main-home" href="../" aria-label="태풍 안전 놀이 메인으로 이동">🏠 다른 활동</a>
 
 <div id="coverScreen">
   <div class="cover-rain" id="coverRain"></div>
